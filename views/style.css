@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #f9f9f9;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btnSubmit {
+    width: 200px;
+    height: 1.5em;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+    padding-right: 4px;
+    border: 1px solid gray;
+}
+
+.btnSubmit:hover {
+    background-color: red;
+}

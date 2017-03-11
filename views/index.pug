@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    style
+      include style.css
+    title Logowanie ...
+  body
+    div.container
+      if user
+        h2 Zalogowałeś się :)
+        h1 #{user.displayName}
+        button.btnSubmit(onClick='window.location.href="/logout"') wyloguj
+      else
+        button.btnSubmit(onClick='window.location.href="/auth/google"') zaloguj z Google
+    
